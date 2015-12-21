@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :user_attachments
   devise_for :users
   resources :users
   get 'welcome/index'
