@@ -1,1 +1,17 @@
 <h1>My Profile</h1>
+
+<%= form_for(@user_attachment, :html => { :multipart => true }) do |f| %>
+  <div class="field">
+    <%= f.hidden_field :user_id, :value => @user.id %>
+  </div>
+  <div class="field">
+    <%= f.file_field :image, :multiple => true, accept: "image/jpeg, image/jpg, image/gif, image/png" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Upload" %>
+  </div>
+<% end %>
+
+<% @user.user_attachments.each do |b| %>
+  <%= image_tag b.image_url, width: 50, height: 50 %>
+<% end %>
