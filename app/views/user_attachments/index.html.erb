@@ -16,9 +16,9 @@
       <tr>
         <td><%= user_attachment.user_id %></td>
         <td><%= user_attachment.image %></td>
-        <td><%= link_to 'Show', user_attachment %></td>
-        <td><%= link_to 'Edit', edit_user_attachment_path(user_attachment) %></td>
-        <td><%= link_to 'Destroy', user_attachment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', user_attachment, class: "btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_user_attachment_path(user_attachment), class: "btn btn-primary" %></td>
+        <td><%= link_to 'Destroy', user_attachment, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New User attachment', new_user_attachment_path %>
+<%= link_to 'New User attachment', new_user_attachment_path, class: "btn btn-primary" %>
