@@ -9,9 +9,7 @@
         <div class="field">
           <%= f.file_field :image, :multiple => true, accept: "image/jpeg, image/jpg, image/gif, image/png" %>
         </div>
-        <!-- <div class="btn btn-primary"> -->
           <%= f.submit "Upload", class: "btn btn-primary" %></br></br>
-        <!-- </div> -->
       <% end %>
 
       <% @user.user_attachments.each do |b| %>
