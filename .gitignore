@@ -9,7 +9,8 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
-
+/config/database.yml
+/config/database.yml.bk
 ## Specific to RubyMotion:
 .dat*
 .repl_history
